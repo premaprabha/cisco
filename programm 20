@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+
+    
+    printf("Menu:\n");
+    printf("1. Tea\n");
+    printf("2. Coffee\n");
+    printf("3. Juice\n");
+    printf("4. Water\n");
+    printf("Enter your choice (1-4): ");
+    scanf("%d", &choice);
