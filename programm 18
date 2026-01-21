@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int day;
+
+    printf("Enter day number (1 for Monday, 2 for Tuesday, ..., 7 for Sunday): ");
+    scanf("%d", &day);
+
+    if (day >= 1 && day <= 5) {
+        printf("It is a Working Day.\n");
+    } 
+    else if (day == 6 || day == 7) {
