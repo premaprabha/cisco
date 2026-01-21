@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, sum = 0;
+
+    printf("Enter a positive in
+#include <stdio.h
