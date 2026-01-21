@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int totalStudents, i;
+
+    printf("Enter the total number of students: ");
+    scanf("%d", &totalStudents);
+
+    printf("Attendance
