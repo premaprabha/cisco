@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    float purchaseAmount;
+    float discount = 0;
+
+    printf("Enter the purchase amount: ");
+  
+    if (purchaseAmount >= 1000) {
+        discount = 0.10 * purchaseAmount;  // 10% discount
+        printf("You get a discount of %.2f\n", discount);
+        printf("Total amount after discount: %.2f\n", purchaseAmount - discount);
+    } else {
+        printf("
