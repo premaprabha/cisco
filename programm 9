@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main() {
+    float price, discountPercent, discountAmount, totalPrice;
+
+    printf("En
