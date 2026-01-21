@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    unsigned long long factorial = 1;  // Use long long for large factorials
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Factorial is
