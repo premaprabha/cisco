@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+
+// Define a structure for Mobile
+struct Mobile {
+    int id;
+    char brand[50];
+    char model[50];
+    float price;
+};
+
+int main() {
+    int n, i;
+
+    printf("Enter number of mobiles: ");
+    scanf("%d", &n);
+
+    struct Mobile mobiles[n];  // Array of structures
+
+    // Input mobile details
+    for(i = 0; i < n; i++) {
+        printf("\nEnter details for Mobile %d\n", i + 1);
+
+        printf("Enter Mobile ID: ");
+        scanf("%d", &mobiles[i].id);
+
+        printf("Enter Brand Name: ");
+        getchar(); 
+        fgets(mobiles[i].brand, sizeof(mobiles[i].brand), stdin);
+        mobiles[i].brand[strcspn(mobiles[i].brand, "\n")] = '\0'; // Remove newline
+
+        printf("Enter Model Name: ");
+        fgets(mobiles[i].model, sizeof(mobiles[i].model), stdin);
+        mobiles[i].model[strcspn(mobiles[i].model, "\n")] = '\0'; // Remove newline
+
+        printf("Enter Price: ");
+        scanf("%f", &mobiles[i].price);
+    }
+
+
+    printf("\n===== Mobile Details =====\n");
+    for(i = 0; i < n; i++) {
+        printf("\nMobile %d:\n", i + 1);
+        printf("ID     : %d\n", mobiles[i].id);
+        printf("Brand  : %s\n", mobiles[i].brand);
+        printf("Model  : %s\n", mobiles[i].model);
+        printf("Price  : %.2f\n", mobiles[i].price);
+    }
+
+    return 0;
+}
+
