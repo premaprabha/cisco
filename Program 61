@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+// Define a structure for Employee
+struct Employee {
+    int id;
+    char name[50];
+    int age;
+    float salary;
+};
+
+int main() {
+    struct Employee emp;
+
+    // Input employee details
+    printf("Enter Employee ID: ");
+    scanf("%d", &emp.id);
+
+    printf("Enter Employee Name: ");
+    getchar(); // Consume leftover newline
+    fgets(emp.name, sizeof(emp.name), stdin);
+    emp.name[strcspn(emp.name, "\n")] = '\0'; // Remove newline
+
+    printf("Enter Employee Age: ");
+    scanf("%d", &emp.age);
+
+    printf("Enter Employee Salary: ");
+    scanf("%f", &emp.salary);
+
+    // Display employee details
+    printf("\n===== Employee Details =====\n");
+    printf("Employee ID   : %d\n", emp.id);
+    printf("Name          : %s\n", emp.name);
+    printf("Age           : %d\n", emp.age);
+    printf("Salary        : %.2f\n", emp.salary);
+
+    return 0;
+}
+
