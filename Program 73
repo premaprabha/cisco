@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Login {
+    char username[50];
+    char password[50];
+};
+
+int main() {
+    FILE *file;
+    struct Login user;
+    int n, i;
+
+    printf("Enter the number of users to store: ");
+    scanf("%d", &n);
+
+
+
