@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Student {
+    int rollNumber;
+    char name[50];
+    float marks;
+};
+
+int main() {
+    FILE *file;
+    struct Student s;
+    int n, i;
+
+  
+    printf("Enter the number of students: ");
+    scanf("%d", &n);
+
+    
+    file = fopen("students.txt", "w");
+    if (file == NULL) {
+        printf("Error opening file!\n");
+        return 1;
+    }
+
+  
