@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Student {
+    int rollNo;
+    char name[50];
+    int age;
+    float marks;
+};
+
+int main() {
+    struct Student student;
+
+    
+    printf("Enter Roll Number: ");
+    scanf("%d", &student.rollNo);
+
+    printf("Enter Name: ");
+    
+    fgets(student.name, sizeof(student.name), stdin);
+    student.name[strcspn(student.name, "\n")] = '\0'; // Remo
+
