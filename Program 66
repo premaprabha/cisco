@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+
+
+struct Product {
+    int id;
+    char name[50];
+    float price;
+    int quantity;
+};
+
+int main() {
+    int n, i;
+
+    printf("Enter number of products: ");
+    scanf("%d", &n);
+
+    struct Product products[n]; // Array of structures
+
+    
+    for(i = 0; i < n; i++) {
+        printf("\nEnter details for Product %d\n", i + 1);
+
+        printf("Enter Product ID: ");
+        scanf("%d", &products[i].id);
+
+        printf("Enter Product Name: ");
+        getchar(); // Consume leftover newline
+        fgets(products[i].name, sizeof(products[i].name), stdin);
+        products[i].name[strcspn(products[i].name, "\n")] = '\0'; // Remove newline
+
+        printf("Enter Product Price: ");
+        scanf("%f", &products[i].price);
+
+        printf("Enter Product Quantity: ");
+        scanf("%d", &products[i].quantity);
+    }
+
+    // Display product details
+    printf("\n===== Product Details =====\n");
+    for(i = 0; i < n; i++) {
+        printf("\nProduct %d:\n", i + 1);
+        printf("ID       : %d\n", products[i].id);
+        printf("Name     : %s\n", products[i].name);
+        printf("Price    : %.2f\n", products[i].price);
+        printf("Quantity : %d\n", products[i].quantity);
+    }
+
+    return 0;
+}
+
