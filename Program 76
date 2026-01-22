@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *sourceFile, *destFile;
+    char ch;
+    char sourceName[100], destName[100];
+
+  
+    printf("Enter the source file name: ");
+    scanf("%s
+
