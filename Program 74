@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Sales {
+    int productID;
+    char productName[50];
+    int quantitySold;
+    float price;
+};
+
+int main() {
+    FILE *file;
+    struct Sales s;
+    int n, i;
+
+    printf("Enter the number of products to record in the sales report: ");
+    scanf("%d", &n);
+
+    
+    file = fopen("sales_report.txt", "_
+
