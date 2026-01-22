@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Employee {
+    int id;
+    char name[50];
+    float salary;
+};
+
+int main() {
+    FILE *file;
+    struct Employee emp;
+    int searchID;
+    int found = 0;
+
+  
+    file = fopen("employees.txt", "r");
+    if (file == NULL) {
+        printf("Error: Cannot open file!\n");
+        return 1;
+    }
+
+    // Ask the user for Employee ID to search
+    printf("Enter the Employee ID to search: ");
+    scanf("%d", &searchID);
+
+    
+    while (fscanf(file, "%d %s %f", &emp.id, emp.name, &emp.salary) != EOF) {
+        if (emp.id == searchID) {
+            printf("\nRecord Found:\n");
+            printf("ID: %d\n", emp.id);
+            printf("Name: %s\n", emp.name);
+            printf("Salary: %.2f\n", emp.salary);
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found) {
+        printf("\nRecord with ID %d not found.\n", searchID);
+    }
+
+    fclose(file); // Close the file
+    return 0;
+}
