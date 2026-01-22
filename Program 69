@@ -1,0 +1,17 @@
+Write a C program to store bus ti#include <stdio.h>
+
+struct BusTicket {
+    char passengerName[50];
+    char busNumber[10];
+    char source[30];
+    char destination[30];
+    char date[15];  
+    int seatNumber;
+};
+
+int main() {
+    int n, i;
+
+    printf("Enter the number of tickets to store: ");
+    sc
+cket details.
