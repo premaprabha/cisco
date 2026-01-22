@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int id;
+    char name[50];
+    int quantity;
+    float price;
+} Item;
+
+void addItem();
+void displayItems();
+void updateItem();
+void deleteItem();
+
+int main() {
+    int choice;
+
+    while (1) {
+        printf("\n===== Inventory Management System =====\n");
+        printf("1. Add Item\n");
+        printf("2. Display Items\n");
+        printf("3. Update Item\n");
+        printf("4. Delete Item\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1: addItem(); break;
+            case 2: displayItems(); break;
+            case 3: updateItem(); break;
+            case 4: deleteItem(); break;
+            case 5: exi
+
