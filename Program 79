@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int id;
+    char name[50];
+} Student;
+
+int main() {
+    FILE *file, *tempFile;
+    Student s;
+    int deleteID;
+    int found = 0;
+
+    
+
