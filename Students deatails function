@@ -17,3 +17,4 @@ int main() {
         scanf(" %[^\n]s", items[i]);  
         printf("Enter price of %s: ", items[i]);
         scanf(
+return 0
