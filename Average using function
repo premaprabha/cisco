@@ -11,3 +11,4 @@ int main() {
 
     if (sellingPrice > costPrice) {
         amount = sellingPrice - cost
+        return 0
