@@ -11,3 +11,4 @@ int main() {
     printf("4. Water\n");
     printf("Enter your choice (1-4): ");
     scanf("%d", &choice);
+return 0
