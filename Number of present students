@@ -12,3 +12,4 @@ int main() {
     bmi = weight / (height * height);
 
     printf("Your BMI
+    return 0
