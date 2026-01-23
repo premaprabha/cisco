@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int id;
+    char name[50];
+} Student;
+
+int main(
+#include <stdio.h>
+
+int main() {
+    float amount;
+
+    // Input total purchase amount
+    printf("Enter total purchase amount: ");
+    scanf("%f", &amount);
+
+    // Check discount eligibility
+    if (amount >= 1000) {
+        printf("Congratulations! You are eligible for a discount.\n");
+    } else {
+        printf("Sorry! You are not eligible for a discount.\n");
+    }
+
+    return 0;
+}
+
