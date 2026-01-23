@@ -24,3 +24,4 @@ int main() {
         scanf("%f", &deduction);
 
         netSalary = basic + allowance - deduction;
+        return 0
