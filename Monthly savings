@@ -19,4 +19,4 @@ int main() {
     
     fgets(student.name, sizeof(student.name), stdin);
     student.name[strcspn(student.name, "\n")] = '\0'; // Remo
-
+return 0
