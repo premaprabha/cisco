@@ -11,4 +11,5 @@ int main() {
 
     printf("Enter rate of interest (in %%): ");
     scanf("%f", &
+return 0
 
