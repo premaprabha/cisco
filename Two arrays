@@ -21,3 +21,4 @@ int main() {
     printf("Enter data to append (press Enter to finish):\n");
     scanf("
 
+return
