@@ -10,3 +10,4 @@ int main() {
         printf("It is a Working Day.\n");
     } 
     else if (day == 6 || day == 7) {
+    return 0
