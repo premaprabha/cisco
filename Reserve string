@@ -12,3 +12,4 @@ int main() {
         printf("Total amount after discount: %.2f\n", purchaseAmount - discount);
     } else {
         printf("
+return 0
