@@ -18,5 +18,5 @@ int main() {
     printf("Enter the number of elements in the second array: ");
     scanf("%d", &n2);
     int arr2[n2];
-
+return 0
     
