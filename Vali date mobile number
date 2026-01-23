@@ -9,3 +9,4 @@ int main() {
 
     if (n < 0) {
         printf("Factorial is
+return 0
