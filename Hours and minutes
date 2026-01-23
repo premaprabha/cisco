@@ -7,4 +7,11 @@ int main() {
     scanf("%d", &totalMinutes);
 
     hours = totalMinutes / 60;
-    minutes = totalMinutes
+    minutes = totalMinutes % 60;
+
+    printf("Hours = %d\n", hours);
+    printf("Minutes = %d\n", minutes);
+
+    return 0;
+
+
